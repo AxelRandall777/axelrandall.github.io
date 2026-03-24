@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axel Randall Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+    header {
+      background: #020617;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+    button {
+      background: #38bdf8;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Axel Randall</h1>
+  <p>Electrical Engineering Student</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am an Electrical Engineering student at Iowa State University (Class of 2029) with experience in C and C++, MATLAB, and embedded systems. I enjoy building real-world projects that combine hardware and software, including drone systems and simulations.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Drone System Project</h3>
+      <p>Designed and built a drone system using an ESP32 microcontroller. Developed remote control functionality and designed circuitry with voltage regulation to protect components.</p>
+    </div>
+    
+    <div class="card">
+      <h3>Engineering Tools</h3>
+      <p>Experience using MATLAB, KiCad, and SolidWorks for simulations, circuit design, and 3D modeling.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Subway</h3>
+    <p>Worked as a team member handling customer service, food preparation, and daily operations including cleaning and restocking.</p>
+  </div>
+  <div class="card">
+    <h3>YMCA Summer Camp</h3>
+    <p>Supervised elementary-aged children, ensuring safety and organizing activities while maintaining the camp environment.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Phone: (507) 403-1416</p>
+  <p>Email: axelrandall2007@gmail.com</p>
+  <p>Location: Dundas, Minnesota</p>
+  <button onclick="alert('Thanks for reaching out!')">Send Message</button>
+</section>
+
+<footer>
+  <p>© 2026 Axel Randall</p>
+</footer>
+
+</body>
+</html>
